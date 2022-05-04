@@ -4,7 +4,7 @@ metadata:
   name: podinfo
   namespace: flux-system
 spec:
-  releaseName: tomcat
+  releaseName: podinfo
   targetNamespace: default
   interval: '30s'
   chart:
