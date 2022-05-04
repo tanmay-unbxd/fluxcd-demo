@@ -1,0 +1,16 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: podinfo
+  namespace: flux-system
+spec:
+  releaseName: tomcat
+  targetNamespace: default
+  interval: '30s'
+  chart:
+    spec:
+      chart: './helm-charts/podinfo'
+      sourceRef:
+        kind: GitRepository
+        name: core-apps
+        namespace: flux-system
