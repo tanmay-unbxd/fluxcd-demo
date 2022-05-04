@@ -24,4 +24,4 @@
   - Generate kubernetes manifest file for flux-cd install
   - Apply those manifests into flux-system namespace
   - Pull the flux-cd configurations from Github Repository
-  - Boostrap the flux-cd with demo tomcat application.
+  - Boostrap the flux-cd with demo podinfo application.
