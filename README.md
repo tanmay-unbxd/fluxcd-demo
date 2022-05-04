@@ -1,4 +1,16 @@
-## Boostrap GKE cluster with Flux-CD with Terraform
+# Boostrap GKE cluster with Flux-CD with Terraform
+---
+## FluxCD : 
+
+1. Apps : 
+  - This directory holds the applications to be installed in the cluster via fluxCD
+2. Clusters: 
+  - This directory holds the cluster specific flux-cd configs. ( Staging / Prod etc )
+3. Infrastructure ; 
+  - This directory holds the infa configs required by FluxCD like GitRepository / HelmRepository Configs
+
+---
+## Terraform (GKEbootstrap): 
 
 ### 1. Network.tf : 
 
